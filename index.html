@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EduConnect College</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>EduConnect College</h1>
+    <nav>
+      <a href="#calculator">Fee Calculator</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section id="intro">
+    <h2>Welcome to EduConnect</h2>
+    <p>Explore our programs and estimate your tuition today!</p>
+  </section>
+
+  <section id="calculator">
+    <h2>Tuition Fee Calculator</h2>
+    <label for="program">Select Program:</label>
+    <select id="program">
+      <option value="bachelor">Bachelor's Degree</option>
+      <option value="masters">Master's Degree</option>
+      <option value="diploma">Diploma</option>
+    </select>
+
+    <label for="years">Number of Years:</label>
+    <input type="number" id="years" min="1" max="5" value="1">
+
+    <button onclick="calculateFee()">Calculate</button>
+    <p id="fee-output"></p>
+  </section>
+
+  <section id="contact">
+    <h2>Inquiry Form</h2>
+    <form onsubmit="return validateForm()">
+      <input type="text" id="name" placeholder="Your Name" required>
+      <input type="email" id="email" placeholder="Your Email" required>
+      <textarea id="message" placeholder="Your Message" required></textarea>
+      <button type="submit">Send</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 EduConnect College. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
