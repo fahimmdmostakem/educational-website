@@ -1,0 +1,82 @@
+* {
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  background-color: #f9f9f9;
+}
+
+header {
+  background-color: #005f5f;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+
+nav a {
+  margin: 0 1rem;
+  color: #ecf0f1;
+  text-decoration: none;
+}
+
+section {
+  padding: 2rem;
+  max-width: 800px;
+  margin: auto;
+}
+
+#calculator, #contact {
+  background-color: #ecf0f1;
+  margin-top: 1rem;
+  border-radius: 8px;
+  padding: 1rem;
+}
+
+input, select, textarea, button {
+  display: block;
+  margin: 1rem 0;
+  padding: 0.5rem;
+  width: 100%;
+  max-width: 400px;
+}
+
+button {
+  background-color: #3498db;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #2980b9;
+}
+
+footer {
+  text-align: center;
+  background: #34495e;
+  color: white;
+  padding: 1rem;
+}
+.logo-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo-title img {
+  height: 60px;
+  margin-right: 10px;
+}
+ {
+  text-align: center;
+  padding: 2rem;
+}
+
+ p {
+  font-size: 1.9rem; 
+  font-weight: 500;
+}
